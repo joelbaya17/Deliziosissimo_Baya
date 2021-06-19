@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliziosissimo - CONTACTO</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="headerLogo">
+            <h1>Deliziosissimo</h1>
+            <h2 id="subtitulo">Servicio de catering</h2>
+        </div>
+        
+        <nav class="headerMenu"> <!--Barra de Navegación NOTA: Ahora las listé con ul y li, antes no estaban listadas-->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="MENUS.html">Menus</a></li>
+                <li><a href="CONTACTO.html">Contacto</a></li>
+                <li><a href="NOSOTROS.html">Sobre nosotros</a></li>
+                <li><a href="TESTIMONIOS.html">Testimonios de clientes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--Aca inicia el formulario de contacto-->
+<main class="main">
+    <form action="">
+        <Fieldset>
+            <!--Etiquetas Input principales (nombre, email, telefono..)-->
+            <legend>Datos de contacto</legend>
+            <br>
+            <label for="nombre">Ingrese su nombre</label>
+            <input type="text" id="nombre" placeholder= "Nombre y apellido">
+            <br>
+            <label for="email">Correo electrónico</label>
+            <input type="text" id="email" placeholder="Email">
+            <br>
+            <label for="teléfono">Teléfono</label>
+            <input type="number" id="teléfono" placeholder="Ej: 011-6726025">
+            <!--FIN de etiquetas input principales-->
+            <br>
+            <!--CAJA DE TEXTO-->
+            <textarea name="" id="" cols="80" rows="10"></textarea>
+            <br>
+
+            <!--Botones (submit y reseteo de formulario)-->
+            <input type="submit" value="Enviar!">
+            <br>
+            <input type="reset" value="Resetear Formulario">
+            <br>
+            <!--Boton Radio-->
+            <p>Seleccione su sexo</p>
+            H<input type="radio" name="sexoUser">
+            M<input type="radio" name="sexoUser">
+            Otro<input type="radio" name="sexoUser">
+
+            <!--Checkbox (a convenir posiblemente uno más util en la posteridad)-->
+            <br>
+            Acepto recibir promociones y notificaciones por correo<input type="checkbox">
+            <br>
+
+            <!--Menu desplegable (A convenir qué va a ir en el mismo, de momento.. no se me ocurrió algo realmente útil. Posiblemente sea algo al estilo de: "Elija su dieta: Omnivoro, Vegetariano, Vegano.. etc)-->
+            <label for="menuDesplegable">Elija la opción que guste</label>
+            <select name="" id="menuDesplegable">
+            <option value="">Liam Gallagher</option>
+            <option value="">Noel Gallagher</option>
+            <option value="">Los dos</option>
+            <option value="">Ninguno, son dos boludos</option>
+            </select>
+        </Fieldset>
+        <!--FIN DEL FORMULARIO DE CONTACTO-->
+        
+    </form>
+</main>
+    <!--FOOTER-->
+    <footer>
+        <div class="pies">PIE DE PAGINA</div>
+        <div class="pies">REDES SOCIALES</div>
+        <div class="pies">MAPA</div>
+    </footer>
+</body>
+</html>

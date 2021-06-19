@@ -1,0 +1,198 @@
+/* Estilos google font */
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/*Header*/
+
+.header{
+    display: flex;
+    background-color: rgb(139, 19, 19);
+    width: 100%;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.headerLogo {
+    width: 20%;
+    margin-left: 15px;
+}
+
+.headerMenu{
+    width: 40%;
+
+}
+
+.headerMenu ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    margin-right: 15px;
+
+
+}
+
+.headerMenu ul li{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+a{
+    color:rgb(207, 152, 90);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* Estilos del Tiutlo y Sub-titulo */
+
+h1{
+    color: rgb(255, 208, 0);
+    font-family: 'Pattaya'; 
+    font-size: 42px;
+}
+
+#subtitulo{
+    font-family: 'Pattaya', sans-serif;
+    color: rgb(240, 214, 68);
+    margin-top: 8px;
+}
+
+/*Hasta aca va el Header*/
+
+/* Main*/
+.main{
+    background-color: rgb(250, 234, 203);
+    display: flex;
+    width: 100%;
+    height: 1000px;
+}
+
+section{
+    display: inline-block;
+    width: 100%;
+}
+
+h3{
+    color: peru;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+h4{
+    color: rgb(92, 133, 30);
+    font-size: 25px;
+}
+
+/* Estilos para la tabla */
+
+/*tabla en general*/
+#tabla{
+    width: 60%;
+    text-align: center;
+    border: 1px solid black;
+    height: 50%;
+
+
+}
+
+#articleTabla {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+
+}
+
+/*letras de premios*/
+#conchaOro{
+    color: goldenrod;
+    font-size: 20px;
+}
+
+#calamarGolden{
+    color: goldenrod;
+    font-size: 20px;
+}
+
+#macacoMarron{
+    color: rgb(156, 75, 21);
+    font-size: 20px;
+
+}
+
+/*interior de la tabla*/
+td{
+    border: 1px solid green;
+}
+
+th{
+    border: 1px solid rgb(158, 4, 4);
+}
+
+/*footer*/
+footer{
+    background-color: rgb(105, 59, 26);
+    font-family: 'Pattaya', sans-serif;
+    font-size: 20px;
+    color: rgb(233, 164, 95);
+    height: 200px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pies:hover {
+    text-align: center;
+    width: 33%;
+    transition: 3s;
+    font-size: 3rem;
+}
+
+
+form{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*//////GRID EN LA PAGINA MENUS/////////*/
+
+#grilla{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 500px;
+    grid-template-areas:"foto1 foto2"
+                        "foto3 foto3";
+    row-gap: 50px;
+    column-gap: 50px;
+    background-color: rgb(250, 234, 203);
+}
+
+
+#imagenUno{
+    grid-area: foto1;
+    transform: translate(10px, 20px);
+}
+
+#imagenDos{
+    grid-area: foto3;
+}
+
+#imagenTres{
+    grid-area: foto2;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
